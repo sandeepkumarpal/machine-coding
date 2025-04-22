@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Portal</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>Employee Database Management</h1>
+        <button class="createEmployee">Add Employee</button>
+      </header>
+    </div>
+
+    <div class="employees">
+      <div class="employees__names">
+        <span class="employees__names--title">Employee List</span>
+        <div class="employees__names--list"></div>
+      </div>
+
+      <div class="employees__single">
+        <span class="employees__single--title">Employee List</span>
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+
+    <div class="addEmployee">
+      <form class="addEmployee__create">
+        Add Employee
+        <div>
+          <input type="text" name="firstName" placeholder="First name" />
+          <input type="text" name="lastName" placeholder="Last name" />
+        </div>
+        <input type="email" name="email" placeholder="email" />
+        <input type="text" name="imageUrl" placeholder="Img url" />
+        <input type="number" name="age" placeholder="Age" />
+        <input type="number" name="salary" placeholder="Salary" />
+        <input
+          type="date"
+          name="dob"
+          class="addEmployee__create--dob"
+          placeholder="DOB"
+        />
+        <input type="number" name="contactNumber" placeholder="contactNumber" />
+        <input type="text" name="address" placeholder="Address" />
+        <input
+          type="submit"
+          class="addEmployee__create--submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+  </body>
+</html>
